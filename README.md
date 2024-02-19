@@ -10,7 +10,7 @@ This repository contains the Dockerfile and scripts necessary to build an enviro
 
 ## Installation
 
-1. Download the [Philips' Pathology SDK](https://www.openpathology.philips.com/).
+1. Download the Philips' Pathology SDK at [OpenPathology Portal](https://www.openpathology.philips.com/).
 2. Extract the `PythonTools.zip` from the `SampleCodes` folder.
 3. Extract the zip file belonging to Python libraries (look for `py38` in the name) from the `Ubuntu20.04` folder.
 4. Clone this repository:

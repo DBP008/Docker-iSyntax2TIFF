@@ -2,7 +2,9 @@
 
 This repo stores the dockerfile and scripts to build an environment to convert Philips' iSyntax files to TIFF.
 
-*Philips' Pathology SDK 2.0_L1 is required.*
+# Requirements
+- *Philips' Pathology SDK 2.0_L1 is required.*
+- Docker
 
 # Installation
 
@@ -19,3 +21,8 @@ This repo stores the dockerfile and scripts to build an environment to convert P
 7) Build the environment
   `docker image build -t dp_isyntax2tiff .`
 
+# Usage
+- Place all .iSyntax files in a folder (e.g. "isynatax_files")
+- run the following:
+  `docker run -v /isynatax_files:/root/dp -it dp_isyntax2tiff`
+- In the folder you selected, you'll find the TIFF files and macro and label JPEGs

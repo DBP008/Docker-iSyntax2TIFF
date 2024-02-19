@@ -1,28 +1,35 @@
 # Docker-iSyntax2TIFF
 
-This repo stores the dockerfile and scripts to build an environment to convert Philips' iSyntax files to TIFF.
+This repository contains the Dockerfile and scripts necessary to build an environment for converting Philips' iSyntax files to TIFF format.
 
-# Requirements
-- *Philips' Pathology SDK 2.0_L1 is required.*
+## Requirements
+- **Philips' Pathology SDK 2.0_L1**
 - Docker
 
-# Installation
+## Installation
 
-1) Download the [Philips's SDK](https://www.openpathology.philips.com/)
-2) Extract for the "SampleCodes" folder the "PythonTools.zip"
-3) Extract for the "Ubuntu20.04" folder the zip file belonging to Python libraries (there's py38 in the name)
-4) Clone this repo
-   `git clone https://github.com/DBP008/Docker-iSyntax2TIFF.git`
-6) In the build folder you should have:
-- Dockerfile
-- convert_and_overview.sh
-- PythonTools.zip
-- philips-pathology-\*py38\*.zip
-7) Build the environment
-  `docker image build -t dp_isyntax2tiff .`
+1. Download the [Philips' Pathology SDK](https://www.openpathology.philips.com/).
+2. Extract the `PythonTools.zip` from the `SampleCodes` folder.
+3. Extract the zip file belonging to Python libraries (look for `py38` in the name) from the `Ubuntu20.04` folder.
+4. Clone this repository:
+   ```
+   git clone https://github.com/DBP008/Docker-iSyntax2TIFF.git
+   ```
+5. In the cloned repository's build folder, ensure you have the following files:
+   - Dockerfile
+   - convert_and_overview.sh
+   - PythonTools.zip
+   - philips-pathology-*py38*.zip
+6. Build the Docker environment:
+   ```
+   docker image build -t dp_isyntax2tiff .
+   ```
 
-# Usage
-- Place all .iSyntax files in a folder (e.g. "isynatax_files")
-- run the following:
-  `docker run -v /isynatax_files:/root/dp -it dp_isyntax2tiff`
-- In the folder you selected, you'll find the TIFF files and macro and label JPEGs
+## Usage
+
+- Place all `.iSyntax` files in a folder (e.g., `isyntax_files`).
+- Run the following command:
+  ```
+  docker run -v /isyntax_files:/root/dp -it dp_isyntax2tiff
+  ```
+- After execution, you'll find the TIFF files, as well as macro and label JPEGs in the selected folder.

@@ -6,6 +6,8 @@ This repository contains the Dockerfile and scripts necessary to build an enviro
 - [**Philips' Pathology SDK 2.0_L1**](https://www.openpathology.philips.com/)
 - Docker
 
+`Philips' SDK` can be downloaded also [here](https://philips.mizecx.com/) (trough `Guest Access`)
+
 ## Installation
 
 1. Download the [Philips' Pathology SDK](https://www.openpathology.philips.com/).

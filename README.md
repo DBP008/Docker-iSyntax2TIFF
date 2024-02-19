@@ -19,7 +19,7 @@ This repository contains the Dockerfile and scripts necessary to build an enviro
    - Dockerfile
    - convert_and_overview.sh
    - PythonTools.zip
-   - philips-pathology-*py38*.zip
+   - philips-pathology-...py38....zip
 6. Build the Docker environment:
    ```
    docker image build -t dp_isyntax2tiff .

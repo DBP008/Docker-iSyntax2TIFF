@@ -6,11 +6,11 @@ This repo stores the dockerfile and scripts to build an environment to convert P
 
 # Installation
 
-1) Download the Philips's SDK - https://www.openpathology.philips.com/
+1) Download the [Philips's SDK](https://www.openpathology.philips.com/)
 2) Extract for the "SampleCodes" folder the "PythonTools.zip"
 3) Extract for the "Ubuntu20.04" folder the zip file belonging to Python libraries (there's py38 in the name)
 4) Clone this repo
-   ``git clone https://github.com/DBP008/Docker-iSyntax2TIFF ``
+   `git clone https://github.com/DBP008/Docker-iSyntax2TIFF.git`
 6) In the build folder you should have:
 - Dockerfile
 - convert_and_overview.sh

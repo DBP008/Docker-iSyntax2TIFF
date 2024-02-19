@@ -3,7 +3,7 @@
 This repository contains the Dockerfile and scripts necessary to build an environment for converting Philips' iSyntax files to TIFF format.
 
 ## Requirements
-- **Philips' Pathology SDK 2.0_L1**
+- [**Philips' Pathology SDK 2.0_L1**](https://www.openpathology.philips.com/)
 - Docker
 
 ## Installation

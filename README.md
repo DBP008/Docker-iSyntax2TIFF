@@ -32,6 +32,6 @@ This repository contains the Dockerfile and scripts necessary to build an enviro
 - Place all `.iSyntax` files in a folder (e.g., `isyntax_files`).
 - Run the following command:
   ```
-  docker run -v /isyntax_files:/root/dp -it dp_isyntax2tiff
+  docker run -v ./isyntax_files:/root/dp -it dp_isyntax2tiff
   ```
 - After execution, you'll find the TIFF files, as well as macro and label JPEGs in the selected folder.

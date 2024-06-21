@@ -1,5 +1,8 @@
 # Docker-iSyntax2TIFF
 
+<ins> ONLY FOR RESEARCH PURPOSES. It employes Philips SDK: </ins>
+© Koninklijke Philips N.V.2021.All rights are reserved. 
+
 This repository contains the Dockerfile and scripts necessary to build an environment for converting Philips' iSyntax files to TIFF format.
 
 ## Requirements

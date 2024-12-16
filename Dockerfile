@@ -42,7 +42,6 @@ RUN rm -rf /tmp/philips*
 COPY PythonTools.zip /tmp
 RUN unzip /tmp/PythonTools.zip -d /root
 RUN rm -rf /tmp/PythonTools.zip
-RUN mkdir /root/dp
 
 RUN mkdir /root/dp
 

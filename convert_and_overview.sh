@@ -9,6 +9,6 @@ do
 	python3 /root/PythonTools/isyntax_to_tiff.py "$file" 1 0 0 
 	python3 /root/PythonTools/dump_macro_label.py "$file"
  	#chmod --reference=$file "${file%%.*}*" 
-  	chmod --reference=$file ${file%%.*}.*
-   	chown --reference=$file ${file%%.*}.*
+  	chmod --reference="$file" "${file%%.*}".*
+   	chown --reference="$file" "${file%%.*}".*
 done

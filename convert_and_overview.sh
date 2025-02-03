@@ -1,5 +1,5 @@
 #!/bin/bash
-
+exec &> >(tee -a log.out)
 shopt -s globstar
 cd /root/dp
 

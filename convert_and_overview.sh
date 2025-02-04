@@ -1,7 +1,9 @@
 #!/bin/bash
-exec &> >(tee -a log.out)
+
 shopt -s globstar
 cd /root/dp
+
+exec &> >(tee -a log.out)
 
 for file in *.isyntax 
 do 

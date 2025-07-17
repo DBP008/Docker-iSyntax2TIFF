@@ -5,7 +5,7 @@ cd /root/dp
 
 exec &> >(tee -a log.out)
 
-for file in *.isyntax 
+for file in *.isyntax *.i2syntax
 do 
 	echo $file
 	python3 /root/PythonTools/isyntax_to_tiff.py "$file" 1 0 0 

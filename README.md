@@ -4,7 +4,9 @@
 © Koninklijke Philips N.V.2021.All rights are reserved. 
 
 This repository contains the Dockerfile and scripts necessary to build an environment for converting Philips' iSyntax files to TIFF format.
+
 This image support both `.isyntax` and `.i2syntax` formats.
+
 Results are always Pyramidal (multi-page) 8-bit sRGB (BIG) `TIFF` files (JPEG Compressed).
 
 ## Requirements
